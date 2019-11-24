@@ -46,7 +46,7 @@ class Mailer < ActionMailer::Base
          # content_type: "text/html",
          to: defn[:to])
   end
-
+ #delayed message
   def delayed_message(defn)
     ret = mail(subject: defn[:subject],
                body: defn[:body],
